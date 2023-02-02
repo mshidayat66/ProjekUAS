@@ -10,10 +10,11 @@ public class Menu2 {
         System.out.println("             MENU UTAMA ADMIN             ");
         System.out.println("==========================================");
         System.out.println("1. Input Data Pelanggan");
-        System.out.println("2. Melihat Data Pelanggan");
-        System.out.println("3. Update Data Pelanggan");
-        System.out.println("4. Hapus Data Pelanggan");
-        System.out.println("5. Keluar");
+        System.out.println("2. Input Data Kamar");
+        System.out.println("3. Melihat Data Pelanggan");
+        System.out.println("4. Update Data Pelanggan");
+        System.out.println("5. Hapus Data Pelanggan");
+        System.out.println("6. Keluar");
         System.out.println();
             
         System.out.print("Pilihan [1/2/3/4/5] = ");
@@ -23,15 +24,18 @@ public class Menu2 {
             InputDataPelanggan.InputData();
         }
         else if(pilih == 2){
-            Database.ShowDataPelanggan();
+            InputDataKamar.InputData();
         }
         else if(pilih == 3){
-            UpdateData.update();
+            Database.ShowDataPelanggan();
         }
         else if(pilih == 4){
-            DeleteData.Delete();
+            UpdateData.update();
         }
         else if(pilih == 5){
+            DeleteData.Delete();
+        }
+        else if(pilih == 6){
             System.exit(0);
         }
         else{

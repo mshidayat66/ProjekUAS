@@ -71,7 +71,8 @@ public class Database {
         ps.setString(5, id_pegawai);
         
         if(ps.executeUpdate() > 0){
-            InputDataKamar.InputData();
+            System.out.println();
+            System.out.println("Data Berhasil Diinput");
         }
         else{
             System.out.println("Data Gagal Diinput");
